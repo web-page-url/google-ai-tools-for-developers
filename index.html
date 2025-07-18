@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancing Developer Productivity with Google Gemini and AI Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Reading Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar-reading" id="progressBar"></div>
+    </div>
+    
+    <!-- Go to Top Button -->
+    <button class="go-to-top" id="goToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <i class="fab fa-google"></i>
+                    <span>AI Developer Tools</span>
+                </div>
+                <button class="nav-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#overview">Overview</a>
+                    <a href="#tools">Tools</a>
+                    <a href="#benefits">Benefits</a>
+                    <a href="#examples">Examples</a>
+                    <a href="#ai-services">AI Services</a>
+                    <a href="#text-to-image">Text-to-Image</a>
+                    <a href="#text-to-speech">Text-to-Speech</a>
+                    <a href="#text-to-video">Text-to-Video</a>
+                </div>
+            </nav>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Enhancing Developer Productivity with 
+                    <span class="gradient-text">Google Gemini</span> 
+                    and AI Tools
+                </h1>
+                <p class="hero-subtitle">
+                    Google's suite of AI tools, including Gemini, Vertex AI, and TensorFlow, significantly boosts developer productivity by streamlining coding, machine learning workflows, and application development.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Get Started
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Key Points Section -->
+    <section id="overview" class="key-points">
+        <div class="container">
+            <h2 class="section-title">Key Highlights</h2>
+            <div class="points-grid">
+                <div class="point-card">
+                    <div class="point-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Google Gemini Code Assist</h3>
+                    <p>AI-driven coding support in popular IDEs, helping developers write, debug, and document code faster with intelligent suggestions.</p>
+                </div>
+                
+                <div class="point-card">
+                    <div class="point-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Vertex AI Platform</h3>
+                    <p>Unified ML platform that simplifies model development with tools like AutoML, reducing the need for extensive coding expertise.</p>
+                </div>
+                
+                <div class="point-card">
+                    <div class="point-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>TensorFlow Framework</h3>
+                    <p>Flexible ML framework that accelerates development through pre-trained models and seamless cloud platform integration.</p>
+                </div>
+                
+                <div class="point-card">
+                    <div class="point-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Proven Results</h3>
+                    <p>Research shows these tools save time, reduce costs, and provide access to advanced AI models with real-world productivity gains.</p>
+                </div>
+                
+                <div class="point-card">
+                    <div class="point-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Creative AI Services</h3>
+                    <p>Transform text into stunning visuals, natural speech, and dynamic videos using Google's advanced generative AI models like Imagen.</p>
+                </div>
+                
+                <div class="point-card">
+                    <div class="point-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud-Native Integration</h3>
+                    <p>Seamlessly integrate with Google Cloud services for scalable, enterprise-ready AI solutions with built-in security and compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Google Gemini Section -->
+    <section class="gemini-overview">
+        <div class="container">
+            <div class="content-split">
+                <div class="content-text">
+                    <h2 class="section-title">What is Google Gemini?</h2>
+                    <p class="lead-text">
+                        Google Gemini is a collection of advanced AI models designed for multimodal tasks, including text, code, images, and video. Gemini Code Assist, a key component, integrates into IDEs like Visual Studio Code, JetBrains, and Android Studio.
+                    </p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Code completion and function generation</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Unit test creation and debugging support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>High-quality code with fewer errors</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-visual">
+                    <div class="code-preview">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="code-title">sample_gemini_code_assist.py</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code># AI-powered code generation example
+def sort_array(arr):
+    """Create a function to sort an array in Python"""
+    return sorted(arr)
+
+# Generated unit test
+def test_sort_array():
+    assert sort_array([3, 1, 4, 1, 5]) == [1, 1, 3, 4, 5]</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+   <!-- Productivity Improvements Section -->
+    <section id="tools" class="productivity-section">
+        <div class="container">
+            <h2 class="section-title">How Do These Tools Improve Productivity?</h2>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon gemini-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Gemini Code Assist</h3>
+                    </div>
+                    <p>Automates repetitive coding tasks and provides contextual suggestions, reducing manual effort significantly.</p>
+                    <ul class="tool-features">
+                        <li>Real-time code completion</li>
+                        <li>Intelligent debugging support</li>
+                        <li>Automated documentation</li>
+                    </ul>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon vertex-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>Vertex AI</h3>
+                    </div>
+                    <p>Offers a unified platform for ML development, with AutoML enabling rapid model creation and MLOps tools.</p>
+                    <ul class="tool-features">
+                        <li>AutoML for quick model creation</li>
+                        <li>MLOps workflow streamlining</li>
+                        <li>Deployment and monitoring</li>
+                    </ul>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon tensorflow-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>TensorFlow</h3>
+                    </div>
+                    <p>Provides pre-trained models via TensorFlow Hub, allowing developers to build applications without starting from scratch.</p>
+                    <ul class="tool-features">
+                        <li>Pre-trained model library</li>
+                        <li>Flexible development framework</li>
+                        <li>Cloud integration ready</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Workflows Section -->
+    <section class="integration-section">
+        <div class="container">
+            <h2 class="section-title">Integration into Workflows</h2>
+            <p class="section-subtitle">Developers can integrate these tools seamlessly across different environments</p>
+            
+            <div class="integration-grid">
+                <div class="integration-item">
+                    <div class="integration-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h4>IDEs</h4>
+                    <p>Gemini Code Assist plugins enhance coding directly within development environments</p>
+                </div>
+                
+                <div class="integration-item">
+                    <div class="integration-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h4>APIs & SDKs</h4>
+                    <p>Vertex AI and Gemini APIs allow programmatic access for custom applications</p>
+                </div>
+                
+                <div class="integration-item">
+                    <div class="integration-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h4>Command-Line Tools</h4>
+                    <p>Google Cloud CLI enables automation of ML workflows</p>
+                </div>
+                
+                <div class="integration-item">
+                    <div class="integration-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Libraries</h4>
+                    <p>TensorFlow integrates into Python projects for flexible ML model development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Benefits for Developers</h2>
+            
+            <div class="benefits-container">
+                <div class="benefit-card primary">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Reduced Development Time</h3>
+                    <p>Automate repetitive tasks and get intelligent suggestions to speed up your development process</p>
+                </div>
+                
+                <div class="benefit-card secondary">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Lower Costs</h3>
+                    <p>Managed cloud services reduce infrastructure costs with optimized resource usage</p>
+                </div>
+                
+                <div class="benefit-card tertiary">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Advanced Models</h3>
+                    <p>Access cutting-edge models like Gemini for enhanced application capabilities</p>
+                </div>
+                
+                <div class="benefit-card quaternary">
+                    <div class="benefit-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Scalability</h3>
+                    <p>Cloud-based infrastructure supports projects of varying sizes with auto-scaling</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-World Examples Section -->
+    <section id="examples" class="examples-section">
+        <div class="container">
+            <h2 class="section-title">Real-World Examples</h2>
+            
+            <div class="examples-grid">
+                <div class="example-card">
+                    <div class="example-header">
+                        <div class="example-icon computer-vision">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Computer Vision</h3>
+                    </div>
+                    <div class="example-content">
+                        <p><strong>Manufacturing Use Case:</strong> A manufacturer used Vertex AI to automate defect detection, achieving high accuracy and saving significant inspection time.</p>
+                        <div class="example-stats">
+                            <div class="stat">
+                                <span class="stat-number">93%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">13+</span>
+                                <span class="stat-label">Defect Types</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="example-header">
+                        <div class="example-icon predictive">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Predictive Analytics</h3>
+                    </div>
+                    <div class="example-content">
+                        <p><strong>Retail Success:</strong> A retailer improved demand forecasting accuracy by 43% using Vertex AI Forecast, optimizing inventory management.</p>
+                        <div class="example-stats">
+                            <div class="stat">
+                                <span class="stat-number">43%</span>
+                                <span class="stat-label">Improvement</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">↓</span>
+                                <span class="stat-label">Food Waste</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <div class="example-header">
+                        <div class="example-icon nlp">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Natural Language Processing</h3>
+                    </div>
+                    <div class="example-content">
+                        <p><strong>Customer Service:</strong> A company reduced customer service call times by automating conversation summaries with Contact Center AI.</p>
+                        <div class="example-stats">
+                            <div class="stat">
+                                <span class="stat-number">30-90s</span>
+                                <span class="stat-label">Time Saved</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">↑</span>
+                                <span class="stat-label">Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <!
+-- Comprehensive Analysis Section -->
+    <section class="analysis-section">
+        <div class="container">
+            <h2 class="section-title">Comprehensive Analysis</h2>
+            <p class="section-subtitle">Deep dive into Google Gemini and AI Tools for Developer Productivity</p>
+            
+            <div class="analysis-content">
+                <div class="analysis-card">
+                    <h3>Understanding Google Gemini</h3>
+                    <p>Google Gemini is a family of multimodal AI models developed by Google, capable of processing text, code, images, audio, and video. Gemini Code Assist leverages the advanced reasoning capabilities of the Gemini 2.5 model to support developers throughout the software development lifecycle.</p>
+                    
+                    <div class="capabilities-grid">
+                        <div class="capability">
+                            <i class="fas fa-code"></i>
+                            <span>Code Generation</span>
+                        </div>
+                        <div class="capability">
+                            <i class="fas fa-autocomplete"></i>
+                            <span>Code Completion</span>
+                        </div>
+                        <div class="capability">
+                            <i class="fas fa-vial"></i>
+                            <span>Unit Test Generation</span>
+                        </div>
+                        <div class="capability">
+                            <i class="fas fa-bug"></i>
+                            <span>Debugging Support</span>
+                        </div>
+                        <div class="capability">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documentation</span>
+                        </div>
+                        <div class="capability">
+                            <i class="fas fa-comments"></i>
+                            <span>Conversational AI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="features-table-container">
+                    <h3>Key Features Comparison</h3>
+                    <div class="table-wrapper">
+                        <table class="features-table">
+                            <thead>
+                                <tr>
+                                    <th>Tool</th>
+                                    <th>Feature</th>
+                                    <th>Productivity Benefit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="tool-badge gemini">Gemini Code Assist</span></td>
+                                    <td>Code Completion & Generation</td>
+                                    <td>Speeds up coding with AI-driven suggestions</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tool-badge gemini">Gemini Code Assist</span></td>
+                                    <td>Conversational Assistance</td>
+                                    <td>Enables natural language interaction in IDEs</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tool-badge vertex">Vertex AI</span></td>
+                                    <td>AutoML</td>
+                                    <td>Simplifies model creation for non-experts</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tool-badge vertex">Vertex AI</span></td>
+                                    <td>MLOps Tools</td>
+                                    <td>Streamlines model management and deployment</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tool-badge tensorflow">TensorFlow</span></td>
+                                    <td>Pre-trained Models</td>
+                                    <td>Accelerates development with ready-made models</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tool-badge tensorflow">TensorFlow</span></td>
+                                    <td>Vertex AI Integration</td>
+                                    <td>Simplifies cloud-based training and deployment</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Methods Section -->
+    <section class="integration-methods">
+        <div class="container">
+            <h3>Integration Methods & Best Practices</h3>
+            
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h4>IDE Plugins</h4>
+                    <p>Gemini Code Assist available for Visual Studio Code, JetBrains IDEs, and Android Studio</p>
+                    <div class="method-tags">
+                        <span class="tag">VS Code</span>
+                        <span class="tag">IntelliJ</span>
+                        <span class="tag">Android Studio</span>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>APIs & SDKs</h4>
+                    <p>Programmatic access through Gemini API and Vertex AI SDK for Python</p>
+                    <div class="method-tags">
+                        <span class="tag">REST API</span>
+                        <span class="tag">Python SDK</span>
+                        <span class="tag">Custom Apps</span>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h4>Command Line</h4>
+                    <p>Google Cloud CLI for automation and scripting of ML workflows</p>
+                    <div class="method-tags">
+                        <span class="tag">gcloud CLI</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Scripting</span>
+                    </div>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Direct Libraries</h4>
+                    <p>TensorFlow integration into Python projects for ML model development</p>
+                    <div class="method-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">ML Models</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="actionable-insights">
+                <h4>Actionable Insights for Optimal Integration</h4>
+                <div class="insights-list">
+                    <div class="insight-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span><strong>Combine IDE and API Usage:</strong> Use Gemini Code Assist in IDEs for coding tasks and the Gemini API for integrating AI features into applications</span>
+                    </div>
+                    <div class="insight-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span><strong>Leverage Vertex AI SDK:</strong> Automate ML workflows using the Vertex AI SDK for Python, especially for hyperparameter tuning and model deployment</span>
+                    </div>
+                    <div class="insight-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span><strong>Use Google Cloud CLI:</strong> Script repetitive tasks like deploying models or managing datasets to streamline workflows</span>
+                    </div>
+                    <div class="insight-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span><strong>Integrate TensorFlow with Vertex AI:</strong> Train TensorFlow models locally and deploy them on Vertex AI for scalable, managed inference</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Example Section -->
+    <section class="code-examples">
+        <div class="container">
+            <h3>Code Integration Example</h3>
+            <div class="code-example-container">
+                <div class="code-preview large">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="code-title">gemini_api_example.py</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code># Example: Using Gemini API for code generation
+import google.generativeai as genai
+
+# Configure the API
+genai.configure(api_key="your-api-key")
+
+# Initialize the model
+model = genai.GenerativeModel('gemini-pro')
+
+# Generate code from natural language
+prompt = "Create a Python function to calculate fibonacci numbers"
+response = model.generate_content(prompt)
+
+print(response.text)
+
+# Example: Vertex AI SDK usage
+from google.cloud import aiplatform
+
+# Initialize Vertex AI
+aiplatform.init(project="your-project-id", location="us-central1")
+
+# Create and deploy a model
+model = aiplatform.Model.upload(
+    display_name="my-model",
+    artifact_uri="gs://your-bucket/model",
+    serving_container_image_uri="gcr.io/cloud-aiplatform/prediction/tf2-cpu.2-8:latest"
+)
+
+endpoint = model.deploy(machine_type="n1-standard-4")</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+   <!-- Detailed Analysis Sections -->
+    <section class="detailed-analysis">
+        <div class="container">
+            <h2 class="section-title">How Gemini Assists Developers</h2>
+            
+            <div class="assistance-grid">
+                <div class="assistance-card">
+                    <div class="assistance-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Code Generation</h3>
+                    <p>Gemini Code Assist generates full functions or code blocks from natural language comments, reducing manual coding effort. For example, a developer can write a comment like "Create a function to sort an array in Python," and Gemini will produce the corresponding code.</p>
+                </div>
+                
+                <div class="assistance-card">
+                    <div class="assistance-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Code Completion</h3>
+                    <p>Offers real-time, context-aware code suggestions, speeding up coding and reducing errors with intelligent autocomplete functionality.</p>
+                </div>
+                
+                <div class="assistance-card">
+                    <div class="assistance-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>Unit Test Generation</h3>
+                    <p>Automatically creates unit tests, ensuring code reliability without requiring developers to write tests manually.</p>
+                </div>
+                
+                <div class="assistance-card">
+                    <div class="assistance-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Debugging Support</h3>
+                    <p>Identifies bugs and suggests fixes, such as applying quick fixes to syntax errors or logical issues in the code.</p>
+                </div>
+                
+                <div class="assistance-card">
+                    <div class="assistance-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Code Documentation</h3>
+                    <p>Generates documentation, improving code maintainability and collaboration across development teams.</p>
+                </div>
+                
+                <div class="assistance-card">
+                    <div class="assistance-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Conversational Assistance</h3>
+                    <p>Allows developers to interact with the AI within the IDE, asking questions like "How do I optimize this loop?" or requesting code modifications.</p>
+                </div>
+                
+                <div class="assistance-card">
+                    <div class="assistance-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Smart Actions and Commands</h3>
+                    <p>Enables quick code transformations via intuitive commands, such as right-clicking code or using the '/' key in the IDE's quick pick bar.</p>
+                </div>
+                
+                <div class="assistance-card">
+                    <div class="assistance-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>Integration with Other Tools</h3>
+                    <p>Gemini Code Assist integrates with external services like GitHub, allowing developers to access issues or other repository data directly from the IDE. For enterprise users, it supports customized code suggestions based on private repositories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Features Section -->
+    <section class="detailed-features">
+        <div class="container">
+            <h2 class="section-title">Detailed Feature Breakdown</h2>
+            
+            <div class="feature-categories">
+                <!-- Gemini Code Assist Features -->
+                <div class="feature-category">
+                    <div class="category-header">
+                        <div class="category-icon gemini-bg">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Gemini Code Assist Features</h3>
+                    </div>
+                    
+                    <div class="feature-items">
+                        <div class="feature-detail">
+                            <h4>AI-Powered Coding</h4>
+                            <p>Provides code completion, generation, and transformation directly in IDEs, supporting languages like Python, Java, and JavaScript.</p>
+                        </div>
+                        
+                        <div class="feature-detail">
+                            <h4>Contextual Suggestions</h4>
+                            <p>Uses the context of open files and project structure to deliver relevant code suggestions.</p>
+                        </div>
+                        
+                        <div class="feature-detail">
+                            <h4>Agentic Chat</h4>
+                            <p>Supports complex, multi-step tasks through conversational interactions, leveraging system tools and Model Context Protocol (MCP) servers.</p>
+                        </div>
+                        
+                        <div class="feature-detail">
+                            <h4>Enterprise Customization</h4>
+                            <p>Offers tailored code suggestions based on enterprise repositories, improving accuracy for organization-specific projects.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vertex AI Features -->
+                <div class="feature-category">
+                    <div class="category-header">
+                        <div class="category-icon vertex-bg">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>Vertex AI Features</h3>
+                    </div>
+                    
+                    <div class="feature-items">
+                        <div class="feature-detail">
+                            <h4>Unified ML Platform</h4>
+                            <p>Integrates data engineering, data science, and ML workflows, enabling collaboration across teams.</p>
+                        </div>
+                        
+                        <div class="feature-detail">
+                            <h4>AutoML</h4>
+                            <p>Allows developers to build custom ML models with minimal coding, ideal for those with limited ML expertise.</p>
+                        </div>
+                        
+                        <div class="feature-detail">
+                            <h4>MLOps Tools</h4>
+                            <p>Includes Vertex AI Pipelines for workflow orchestration, Model Registry for version control, and Feature Store for reusing ML features.</p>
+                        </div>
+                        
+                        <div class="feature-detail">
+                            <h4>Access to Advanced Models</h4>
+                            <p>Supports models like Gemini, Imagen, and third-party models (e.g., Anthropic's Claude), enabling developers to leverage state-of-the-art AI.</p>
+                        </div>
+                        
+                        <div class="feature-detail">
+                            <h4>Vertex AI Studio</h4>
+                            <p>Provides a console for rapid prototyping and testing of generative AI models, including multimodal prompts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TensorFlow Features -->
+                <div class="feature-category">
+                    <div class="category-header">
+                        <div class="category-icon tensorflow-bg">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>TensorFlow Features</h3>
+                    </div>
+                    
+                    <div class="feature-items">
+                        <div class="feature-detail">
+                            <h4>Flexible Framework</h4>
+                            <p>Supports building and training ML models with extensive libraries and tools.</p>
+                        </div>
+                        
+                        <div class="feature-detail">
+                            <h4>TensorFlow Hub</h4>
+                            <p>Offers pre-trained models, reducing the time needed to develop and train models from scratch.</p>
+                        </div>
+                        
+                        <div class="feature-detail">
+                            <h4>Integration with Vertex AI</h4>
+                            <p>Enables seamless training and deployment of TensorFlow models on Google's cloud infrastructure.</p>
+                        </div>
+                        
+                        <div class="feature-detail">
+                            <h4>Community and Ecosystem</h4>
+                            <p>Provides access to a vast community and resources, including TensorFlow Extended (TFX) for production ML pipelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Deep Dive -->
+    <section class="benefits-deep-dive">
+        <div class="container">
+            <h2 class="section-title">Benefits of Using Google's AI Tools for Modern AI Development</h2>
+            
+            <div class="benefits-detailed">
+                <div class="benefit-detailed-card">
+                    <div class="benefit-detailed-header">
+                        <div class="benefit-detailed-icon time-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Reduced Development Time</h3>
+                    </div>
+                    <p>Gemini Code Assist automates coding tasks, while AutoML in Vertex AI simplifies model creation, enabling faster development cycles. Developers can focus on high-level problem-solving rather than repetitive coding tasks.</p>
+                </div>
+                
+                <div class="benefit-detailed-card">
+                    <div class="benefit-detailed-header">
+                        <div class="benefit-detailed-icon cost-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Cost Savings</h3>
+                    </div>
+                    <p>Managed services in Vertex AI reduce infrastructure management costs, and features like auto-scaling optimize resource usage. Free tiers for tools like Gemini Code Assist for individuals further lower costs.</p>
+                </div>
+                
+                <div class="benefit-detailed-card">
+                    <div class="benefit-detailed-header">
+                        <div class="benefit-detailed-icon model-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Access to Advanced Models</h3>
+                    </div>
+                    <p>Developers can leverage state-of-the-art models like Gemini 2.5, which support multimodal tasks and advanced reasoning, enhancing application capabilities significantly.</p>
+                </div>
+                
+                <div class="benefit-detailed-card">
+                    <div class="benefit-detailed-header">
+                        <div class="benefit-detailed-icon workflow-icon">
+                            <i class="fas fa-stream"></i>
+                        </div>
+                        <h3>Streamlined Workflows</h3>
+                    </div>
+                    <p>Vertex AI's unified platform and Gemini's IDE integrations reduce tool-switching and complexity, improving efficiency across the development lifecycle.</p>
+                </div>
+                
+                <div class="benefit-detailed-card">
+                    <div class="benefit-detailed-header">
+                        <div class="benefit-detailed-icon scale-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <h3>Scalability</h3>
+                    </div>
+                    <p>Cloud-based infrastructure allows developers to scale resources as needed, supporting projects of varying sizes from prototypes to enterprise applications.</p>
+                </div>
+                
+                <div class="benefit-detailed-card">
+                    <div class="benefit-detailed-header">
+                        <div class="benefit-detailed-icon collab-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Collaboration</h3>
+                    </div>
+                    <p>Tools like Colab Enterprise facilitate team collaboration on ML projects, enhancing productivity in team settings with shared notebooks and resources.</p>
+                </div>
+                
+                <div class="benefit-detailed-card">
+                    <div class="benefit-detailed-header">
+                        <div class="benefit-detailed-icon security-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security and Compliance</h3>
+                    </div>
+                    <p>Built-in security features, such as IAM policies in Vertex AI and IP indemnification in Gemini Code Assist, ensure data protection and compliance with industry standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Benefits Table -->
+    <section class="benefits-table-section">
+        <div class="container">
+            <h3>Benefits Summary Table</h3>
+            <div class="table-wrapper">
+                <table class="benefits-table">
+                    <thead>
+                        <tr>
+                            <th>Benefit</th>
+                            <th>Tool/Application</th>
+                            <th>Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reduced Development Time</td>
+                            <td><span class="tool-badge gemini">Gemini Code Assist</span>, <span class="tool-badge vertex">Vertex AI AutoML</span></td>
+                            <td>Faster coding and model creation</td>
+                        </tr>
+                        <tr>
+                            <td>Cost Savings</td>
+                            <td><span class="tool-badge vertex">Vertex AI Managed Services</span></td>
+                            <td>Lower infrastructure costs, efficient resource use</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Model Access</td>
+                            <td><span class="tool-badge gemini">Gemini</span>, <span class="tool-badge vertex">Vertex AI Model Garden</span></td>
+                            <td>Enhanced application capabilities</td>
+                        </tr>
+                        <tr>
+                            <td>Streamlined Workflows</td>
+                            <td><span class="tool-badge vertex">Vertex AI</span>, <span class="tool-badge gemini">Gemini Code Assist</span></td>
+                            <td>Reduced complexity, seamless tool integration</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Real-World Examples -->
+    <section class="detailed-examples">
+        <div class="container">
+            <h2 class="section-title">Detailed Real-World Applications</h2>
+            
+            <div class="detailed-examples-grid">
+                <!-- Computer Vision Example -->
+                <div class="detailed-example-card">
+                    <div class="example-category-header">
+                        <div class="example-category-icon cv-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Computer Vision</h3>
+                    </div>
+                    
+                    <div class="example-case">
+                        <h4>Niveus Solutions for Adhesive Manufacturer</h4>
+                        <p><strong>Challenge:</strong> Manual defect detection was time-consuming and error-prone</p>
+                        <p><strong>Solution:</strong> Utilized Vertex AI's AutoML Image multi-label classification to develop a low-code solution for automated defect detection.</p>
+                        <p><strong>Results:</strong> The solution identified over 13 types of defects (e.g., cracks, leaks) with 93% accuracy, automating a previously manual, error-prone process. This reduced inspection time, improved service quality, and lowered repair costs.</p>
+                        
+                        <div class="example-metrics">
+                            <div class="metric">
+                                <span class="metric-value">93%</span>
+                                <span class="metric-label">Detection Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">13+</span>
+                                <span class="metric-label">Defect Types Identified</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">↓50%</span>
+                                <span class="metric-label">Inspection Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Predictive Analytics Example -->
+                <div class="detailed-example-card">
+                    <div class="example-category-header">
+                        <div class="example-category-icon pa-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Predictive Analytics</h3>
+                    </div>
+                    
+                    <div class="example-case">
+                        <h4>Coop - Demand Forecasting</h4>
+                        <p><strong>Challenge:</strong> Inaccurate demand forecasting led to food waste and inventory issues</p>
+                        <p><strong>Solution:</strong> Used Vertex AI Forecast to predict product demand and optimize inventory levels in distribution centers.</p>
+                        <p><strong>Results:</strong> This resulted in a 43% improvement in forecasting accuracy, reducing food waste and enhancing sustainability efforts across their supply chain.</p>
+                        
+                        <div class="example-metrics">
+                            <div class="metric">
+                                <span class="metric-value">43%</span>
+                                <span class="metric-label">Forecasting Improvement</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">↓30%</span>
+                                <span class="metric-label">Food Waste Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">↑25%</span>
+                                <span class="metric-label">Inventory Efficiency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- NLP Examples -->
+                <div class="detailed-example-card">
+                    <div class="example-category-header">
+                        <div class="example-category-icon nlp-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Natural Language Processing</h3>
+                    </div>
+                    
+                    <div class="example-case">
+                        <h4>Best Buy - Contact Center AI</h4>
+                        <p><strong>Challenge:</strong> Long customer service call times affecting satisfaction</p>
+                        <p><strong>Solution:</strong> Implemented Contact Center AI to generate real-time conversation summaries.</p>
+                        <p><strong>Results:</strong> Reduced average call times by 30-90 seconds, improving both customer and agent satisfaction while streamlining operations.</p>
+                        
+                        <div class="example-metrics">
+                            <div class="metric">
+                                <span class="metric-value">30-90s</span>
+                                <span class="metric-label">Call Time Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">↑40%</span>
+                                <span class="metric-label">Agent Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="example-case">
+                        <h4>Etsy - Customer Feedback Analysis</h4>
+                        <p><strong>Challenge:</strong> Manual analysis of customer feedback took hours</p>
+                        <p><strong>Solution:</strong> Leveraged Gemini in Sheets to analyze customer feedback automatically.</p>
+                        <p><strong>Results:</strong> Reduced analysis time from hours to minutes, enabling faster identification of trends and improved customer interactions.</p>
+                        
+                        <div class="example-metrics">
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Time Savings</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3x</span>
+                                <span class="metric-label">Faster Insights</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Summary Table -->
+    <section class="applications-table">
+        <div class="container">
+            <h3>Real-World Applications Summary</h3>
+            <div class="table-wrapper">
+                <table class="applications-summary-table">
+                    <thead>
+                        <tr>
+                            <th>Domain</th>
+                            <th>Organization</th>
+                            <th>Tool Used</th>
+                            <th>Outcome</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="domain-badge cv">Computer Vision</span></td>
+                            <td>Adhesive Manufacturer</td>
+                            <td><span class="tool-badge vertex">Vertex AI AutoML</span></td>
+                            <td>93% accuracy, reduced inspection time</td>
+                        </tr>
+                        <tr>
+                            <td><span class="domain-badge pa">Predictive Analytics</span></td>
+                            <td>Coop</td>
+                            <td><span class="tool-badge vertex">Vertex AI Forecast</span></td>
+                            <td>43% improved forecasting accuracy</td>
+                        </tr>
+                        <tr>
+                            <td><span class="domain-badge nlp">NLP</span></td>
+                            <td>Best Buy</td>
+                            <td><span class="tool-badge vertex">Contact Center AI</span></td>
+                            <td>30-90s reduced call times</td>
+                        </tr>
+                        <tr>
+                            <td><span class="domain-badge nlp">NLP</span></td>
+                            <td>Etsy</td>
+                            <td><span class="tool-badge gemini">Gemini in Sheets</span></td>
+                            <td>Faster feedback analysis</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actionable Insights for Developers -->
+    <section class="developer-insights">
+        <div class="container">
+            <h2 class="section-title">Actionable Insights for Developers</h2>
+            
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3>Start with Free Tiers</h3>
+                    <p>Experiment with Gemini Code Assist for individuals or Google AI Studio's free plan to explore capabilities without cost. This allows you to understand the tools before committing to paid plans.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Leverage Documentation</h3>
+                    <p>Use resources like the Gemini API Cookbook on GitHub for practical examples and tutorials. Comprehensive documentation accelerates learning and implementation.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Combine Tools</h3>
+                    <p>Integrate Gemini Code Assist for coding, Vertex AI for ML workflows, and TensorFlow for custom model development to maximize productivity across your entire development stack.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Monitor Costs</h3>
+                    <p>Utilize Vertex AI's cost management features, such as auto-scaling, to optimize spending on cloud resources. Set up billing alerts to avoid unexpected charges.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3>Validate Outputs</h3>
+                    <p>Always review AI-generated code or model outputs for accuracy, as they may occasionally produce plausible but incorrect results. Human oversight remains crucial.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Continuous Learning</h3>
+                    <p>Stay updated with the latest features and best practices. Google regularly updates these tools with new capabilities and improvements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google AI Services Section -->
+    <section id="ai-services" class="google-ai-services">
+        <div class="container">
+            <h2 class="section-title">Google's Advanced AI Services</h2>
+            <p class="section-subtitle">Explore Google's cutting-edge AI services that transform text into rich multimedia content</p>
+            
+            <div class="services-overview">
+                <div class="service-highlight">
+                    <div class="service-highlight-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Text-to-Image Generation</h3>
+                    <p>Transform written descriptions into stunning visual content with advanced AI models</p>
+                </div>
+                
+                <div class="service-highlight">
+                    <div class="service-highlight-icon">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3>Text-to-Speech Synthesis</h3>
+                    <p>Convert text into natural-sounding speech with multiple voices and languages</p>
+                </div>
+                
+                <div class="service-highlight">
+                    <div class="service-highlight-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Text-to-Video Creation</h3>
+                    <p>Generate dynamic video content from text descriptions using AI technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text-to-Image Section -->
+    <section id="text-to-image" class="text-to-image-section">
+        <div class="container">
+            <div class="service-content-split">
+                <div class="service-text">
+                    <h2 class="service-title">Text-to-Image Generation</h2>
+                    <p class="service-description">
+                        Google's text-to-image AI services, including Imagen and integration with Vertex AI, enable developers to create high-quality images from textual descriptions. These services leverage advanced diffusion models and machine learning to generate photorealistic images, artwork, and creative visuals.
+                    </p>
+                    
+                    <div class="service-features">
+                        <h3>Key Features</h3>
+                        <div class="feature-list-grid">
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-palette"></i>
+                                <div>
+                                    <h4>Imagen AI Model</h4>
+                                    <p>Google's flagship text-to-image model that creates photorealistic images with exceptional detail and accuracy</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-magic"></i>
+                                <div>
+                                    <h4>Creative Flexibility</h4>
+                                    <p>Generate various art styles, from photorealistic to abstract, cartoon, and artistic interpretations</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-cogs"></i>
+                                <div>
+                                    <h4>API Integration</h4>
+                                    <p>Easy integration through Vertex AI APIs for seamless application development</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>Safety Filters</h4>
+                                    <p>Built-in content filtering and safety measures to ensure appropriate image generation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="use-cases">
+                        <h3>Use Cases</h3>
+                        <ul class="use-case-list">
+                            <li><strong>Content Creation:</strong> Generate marketing visuals, social media content, and blog illustrations</li>
+                            <li><strong>Product Design:</strong> Create concept art and product mockups for rapid prototyping</li>
+                            <li><strong>Gaming & Entertainment:</strong> Generate game assets, character designs, and environmental art</li>
+                            <li><strong>E-commerce:</strong> Create product variations and lifestyle images for online stores</li>
+                            <li><strong>Education:</strong> Generate educational illustrations and visual learning materials</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-visual">
+                    <div class="demo-container">
+                        <div class="demo-input">
+                            <h4>Text Input Example:</h4>
+                            <div class="input-box">
+                                <p>"A futuristic cityscape at sunset with flying cars, neon lights, and towering glass buildings reflecting the orange sky"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        
+                        <div class="demo-output">
+                            <h4>Generated Image:</h4>
+                            <div class="image-placeholder">
+                                <i class="fas fa-image"></i>
+                                <p>AI-Generated Futuristic Cityscape</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="code-example-small">
+                        <div class="code-header">
+                            <span class="code-title">imagen_api_example.py</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code># Generate image using Vertex AI Imagen
+from google.cloud import aiplatform
+from vertexai.preview.vision_models import ImageGenerationModel
+
+# Initialize the model
+model = ImageGenerationModel.from_pretrained("imagegeneration@002")
+
+# Generate image from text
+response = model.generate_images(
+    prompt="A futuristic cityscape at sunset",
+    number_of_images=1,
+    language="en"
+)
+
+# Save the generated image
+response.images[0].save("generated_image.png")</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text-to-Speech Section -->
+    <section id="text-to-speech" class="text-to-speech-section">
+        <div class="container">
+            <div class="service-content-split reverse">
+                <div class="service-visual">
+                    <div class="audio-demo-container">
+                        <div class="audio-demo">
+                            <h4>Text-to-Speech Demo</h4>
+                            <div class="audio-input">
+                                <p>"Welcome to Google's advanced text-to-speech technology. This natural-sounding voice is generated using state-of-the-art AI models."</p>
+                            </div>
+                            
+                            <div class="audio-controls">
+                                <button class="audio-btn play-btn">
+                                    <i class="fas fa-play"></i>
+                                    Play Sample
+                                </button>
+                                <div class="voice-selector">
+                                    <label>Voice:</label>
+                                    <select>
+                                        <option>Neural2 - Female (US)</option>
+                                        <option>Neural2 - Male (US)</option>
+                                        <option>WaveNet - Female (UK)</option>
+                                        <option>Standard - Male (AU)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="audio-waveform">
+                                <div class="waveform-bars">
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="code-example-small">
+                            <div class="code-header">
+                                <span class="code-title">tts_api_example.py</span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code># Text-to-Speech using Google Cloud
+from google.cloud import texttospeech
+
+# Initialize client
+client = texttospeech.TextToSpeechClient()
+
+# Configure synthesis input
+synthesis_input = texttospeech.SynthesisInput(
+    text="Hello, this is Google Text-to-Speech!"
+)
+
+# Configure voice parameters
+voice = texttospeech.VoiceSelectionParams(
+    language_code="en-US",
+    name="en-US-Neural2-F",
+    ssml_gender=texttospeech.SsmlVoiceGender.FEMALE
+)
+
+# Configure audio format
+audio_config = texttospeech.AudioConfig(
+    audio_encoding=texttospeech.AudioEncoding.MP3
+)
+
+# Generate speech
+response = client.synthesize_speech(
+    input=synthesis_input,
+    voice=voice,
+    audio_config=audio_config
+)
+
+# Save audio file
+with open("output.mp3", "wb") as out:
+    out.write(response.audio_content)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-text">
+                    <h2 class="service-title">Text-to-Speech Synthesis</h2>
+                    <p class="service-description">
+                        Google Cloud Text-to-Speech converts text into natural-sounding speech using advanced neural networks and WaveNet technology. With support for 40+ languages and 220+ voices, it provides developers with powerful speech synthesis capabilities.
+                    </p>
+                    
+                    <div class="service-features">
+                        <h3>Advanced Capabilities</h3>
+                        <div class="feature-list-grid">
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-brain"></i>
+                                <div>
+                                    <h4>Neural2 Voices</h4>
+                                    <p>Latest generation AI voices with human-like intonation and natural speech patterns</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <h4>Multi-Language Support</h4>
+                                    <p>Support for 40+ languages and regional variants with native pronunciation</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-sliders-h"></i>
+                                <div>
+                                    <h4>Voice Customization</h4>
+                                    <p>Adjust speaking rate, pitch, volume, and pronunciation using SSML markup</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-microphone"></i>
+                                <div>
+                                    <h4>Custom Voice Models</h4>
+                                    <p>Create unique brand voices with Custom Voice technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="technical-specs">
+                        <h3>Technical Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <h4>Audio Formats</h4>
+                                <p>MP3, WAV, OGG, FLAC</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Sample Rates</h4>
+                                <p>8kHz to 48kHz</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Voice Types</h4>
+                                <p>Standard, WaveNet, Neural2</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>SSML Support</h4>
+                                <p>Full markup language support</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="use-cases">
+                        <h3>Applications</h3>
+                        <ul class="use-case-list">
+                            <li><strong>Voice Assistants:</strong> Power conversational AI and virtual assistants</li>
+                            <li><strong>Accessibility:</strong> Create audio content for visually impaired users</li>
+                            <li><strong>E-learning:</strong> Generate narration for educational content and courses</li>
+                            <li><strong>IVR Systems:</strong> Enhance phone systems with natural-sounding prompts</li>
+                            <li><strong>Content Creation:</strong> Produce podcasts, audiobooks, and voice-overs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text-to-Video Section -->
+    <section id="text-to-video" class="text-to-video-section">
+        <div class="container">
+            <div class="service-content-split">
+                <div class="service-text">
+                    <h2 class="service-title">Text-to-Video Creation</h2>
+                    <p class="service-description">
+                        Google's emerging text-to-video technology represents the next frontier in AI-generated content. Through advanced research and integration with Vertex AI, Google is developing capabilities to generate dynamic video content from textual descriptions, opening new possibilities for content creation and storytelling.
+                    </p>
+                    
+                    <div class="service-features">
+                        <h3>Emerging Capabilities</h3>
+                        <div class="feature-list-grid">
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-film"></i>
+                                <div>
+                                    <h4>Video Generation Models</h4>
+                                    <p>Advanced AI models that create coherent video sequences from text prompts</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Temporal Consistency</h4>
+                                    <p>Maintains visual coherence across video frames for smooth motion</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-palette"></i>
+                                <div>
+                                    <h4>Style Control</h4>
+                                    <p>Generate videos in various artistic styles and visual aesthetics</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item-detailed">
+                                <i class="fas fa-expand"></i>
+                                <div>
+                                    <h4>Resolution Scaling</h4>
+                                    <p>Support for multiple video resolutions and aspect ratios</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="research-highlights">
+                        <h3>Research & Development</h3>
+                        <div class="research-items">
+                            <div class="research-item">
+                                <h4>Phenaki Model</h4>
+                                <p>Google's research model for generating videos from text with variable length sequences</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Imagen Video</h4>
+                                <p>Extension of Imagen technology for high-definition video generation</p>
+                            </div>
+                            <div class="research-item">
+                                <h4>Vertex AI Integration</h4>
+                                <p>Future integration with Vertex AI platform for enterprise video generation</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="use-cases">
+                        <h3>Potential Applications</h3>
+                        <ul class="use-case-list">
+                            <li><strong>Content Marketing:</strong> Generate promotional videos and advertisements</li>
+                            <li><strong>Education:</strong> Create instructional videos and animated explanations</li>
+                            <li><strong>Entertainment:</strong> Produce short films, animations, and creative content</li>
+                            <li><strong>Social Media:</strong> Generate engaging video content for platforms</li>
+                            <li><strong>Prototyping:</strong> Quickly visualize concepts and storyboards</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-visual">
+                    <div class="video-demo-container">
+                        <div class="video-demo">
+                            <h4>Text-to-Video Concept</h4>
+                            <div class="video-input">
+                                <p>"A serene mountain lake at dawn with mist rising from the water, birds flying overhead, and gentle ripples on the surface"</p>
+                            </div>
+                            
+                            <div class="demo-arrow">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            
+                            <div class="video-placeholder">
+                                <div class="video-frame">
+                                    <i class="fas fa-play-circle"></i>
+                                    <p>AI-Generated Video</p>
+                                    <span class="video-duration">0:15</span>
+                                </div>
+                                <div class="video-controls">
+                                    <button class="video-btn">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <span class="time">0:00 / 0:15</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="future-features">
+                            <h4>Future Capabilities</h4>
+                            <div class="capability-tags">
+                                <span class="capability-tag">4K Resolution</span>
+                                <span class="capability-tag">60fps Generation</span>
+                                <span class="capability-tag">Audio Sync</span>
+                                <span class="capability-tag">Style Transfer</span>
+                                <span class="capability-tag">Scene Transitions</span>
+                                <span class="capability-tag">Character Animation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="code-example-small">
+                            <div class="code-header">
+                                <span class="code-title">video_generation_concept.py</span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code># Future Text-to-Video API Concept
+from google.cloud import aiplatform
+from vertexai.preview.video_models import VideoGenerationModel
+
+# Initialize video generation model
+model = VideoGenerationModel.from_pretrained("videogen@001")
+
+# Generate video from text
+response = model.generate_video(
+    prompt="A serene mountain lake at dawn",
+    duration_seconds=15,
+    resolution="1080p",
+    fps=30,
+    style="photorealistic"
+)
+
+# Save generated video
+response.video.save("generated_video.mp4")</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Services Comparison -->
+    <section class="services-comparison">
+        <div class="container">
+            <h2 class="section-title">Google AI Services Comparison</h2>
+            
+            <div class="comparison-table-wrapper">
+                <table class="services-comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Input</th>
+                            <th>Output</th>
+                            <th>Use Cases</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="service-cell">
+                                    <i class="fas fa-image"></i>
+                                    <span>Text-to-Image</span>
+                                </div>
+                            </td>
+                            <td>Text descriptions</td>
+                            <td>High-quality images</td>
+                            <td>Marketing, Design, Art</td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="service-cell">
+                                    <i class="fas fa-volume-up"></i>
+                                    <span>Text-to-Speech</span>
+                                </div>
+                            </td>
+                            <td>Text content</td>
+                            <td>Natural speech audio</td>
+                            <td>Accessibility, IVR, Content</td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="service-cell">
+                                    <i class="fas fa-video"></i>
+                                    <span>Text-to-Video</span>
+                                </div>
+                            </td>
+                            <td>Text prompts</td>
+                            <td>Dynamic video content</td>
+                            <td>Marketing, Education, Entertainment</td>
+                            <td><span class="status research">Research</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Examples -->
+    <section class="integration-examples">
+        <div class="container">
+            <h2 class="section-title">Integration Examples</h2>
+            <p class="section-subtitle">See how these AI services can be combined for powerful multimedia applications</p>
+            
+            <div class="integration-scenarios">
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <h3>Content Creation Pipeline</h3>
+                        <div class="scenario-flow">
+                            <span class="flow-step">Text</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flow-step">Image</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flow-step">Speech</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flow-step">Video</span>
+                        </div>
+                    </div>
+                    <div class="scenario-content">
+                        <p>Create a complete multimedia presentation by generating images from descriptions, adding voiceover with text-to-speech, and combining them into video content.</p>
+                        <div class="scenario-benefits">
+                            <span class="benefit-tag">Automated Workflow</span>
+                            <span class="benefit-tag">Cost Effective</span>
+                            <span class="benefit-tag">Scalable</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <h3>E-learning Platform</h3>
+                        <div class="scenario-flow">
+                            <span class="flow-step">Course Text</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flow-step">Illustrations</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flow-step">Narration</span>
+                        </div>
+                    </div>
+                    <div class="scenario-content">
+                        <p>Transform written course materials into engaging multimedia lessons with AI-generated illustrations and natural-sounding narration.</p>
+                        <div class="scenario-benefits">
+                            <span class="benefit-tag">Accessibility</span>
+                            <span class="benefit-tag">Engagement</span>
+                            <span class="benefit-tag">Multilingual</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <h3>Marketing Automation</h3>
+                        <div class="scenario-flow">
+                            <span class="flow-step">Product Info</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flow-step">Visuals</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flow-step">Ad Copy</span>
+                        </div>
+                    </div>
+                    <div class="scenario-content">
+                        <p>Automatically generate marketing materials including product images, promotional videos, and voice-over content from product descriptions.</p>
+                        <div class="scenario-benefits">
+                            <span class="benefit-tag">Brand Consistency</span>
+                            <span class="benefit-tag">Rapid Deployment</span>
+                            <span class="benefit-tag">A/B Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citations and Resources -->
+    <section class="citations">
+        <div class="container">
+            <h2 class="section-title">Citations & Resources</h2>
+            
+            <div class="citations-grid">
+                <div class="citation-card">
+                    <div class="citation-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h4>Gemini Code Assist Overview</h4>
+                    <p>Official documentation and feature overview for Google's AI-powered coding assistant.</p>
+                </div>
+                
+                <div class="citation-card">
+                    <div class="citation-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4>Vertex AI Platform</h4>
+                    <p>Comprehensive guide to Google Cloud's unified machine learning platform and its capabilities.</p>
+                </div>
+                
+                <div class="citation-card">
+                    <div class="citation-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h4>Niveus Solutions Case Study</h4>
+                    <p>Real-world implementation of Vertex AI for automated defect detection in manufacturing.</p>
+                </div>
+                
+                <div class="citation-card">
+                    <div class="citation-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>101 Real-World Generative AI Use Cases</h4>
+                    <p>Comprehensive collection of practical applications and success stories across industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Enhance Your Development Productivity?</h2>
+                <p>By adopting these tools and strategies, developers can significantly enhance their productivity, streamline workflows, and build innovative AI applications efficiently.</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Start Your AI Journey
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download Resources
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Google AI Tools</h4>
+                    <ul>
+                        <li><a href="#">Gemini Code Assist</a></li>
+                        <li><a href="#">Vertex AI</a></li>
+                        <li><a href="#">TensorFlow</a></li>
+                        <li><a href="#">AI Studio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Developer Forum</a></li>
+                        <li><a href="#">Status Page</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Google AI Developer Tools. Enhancing productivity through artificial intelligence.</p>
+                <p class="created-by">Created with ❤️ by <span class="creator-name">Anubhav</span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html><scri
+pt>
+<script>
+// Mobile Navigation Toggle
+function toggleMobileMenu() {
+    const navMenu = document.getElementById('navMenu');
+    const navToggle = document.querySelector('.nav-toggle');
+    
+    navMenu.classList.toggle('active');
+    
+    // Change hamburger to X when menu is open
+    const icon = navToggle.querySelector('i');
+    if (navMenu.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    }
+}
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navMenu = document.getElementById('navMenu');
+        const navToggle = document.querySelector('.nav-toggle');
+        const icon = navToggle.querySelector('i');
+        
+        navMenu.classList.remove('active');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    });
+});
+
+
+// Navbar scroll effect and reading progress
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    const progressBar = document.getElementById('progressBar');
+    const goToTopBtn = document.getElementById('goToTop');
+    
+    // Navbar scroll effect
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+    
+    // Reading progress bar
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
+    progressBar.style.width = scrollPercent + '%';
+    
+    // Go to top button visibility
+    if (window.scrollY > 300) {
+        goToTopBtn.classList.add('visible');
+    } else {
+        goToTopBtn.classList.remove('visible');
+    }
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Scroll to top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+</body>
+</html>
