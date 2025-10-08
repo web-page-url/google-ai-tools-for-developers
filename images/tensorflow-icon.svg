@@ -1,0 +1,58 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6f00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8f00;stop-opacity:1" />
+    </linearGradient>
+    <filter id="tfGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="60" cy="60" r="55" fill="url(#tfGradient)" opacity="0.1"/>
+  
+  <!-- TensorFlow logo inspired design -->
+  <g transform="translate(60, 60)" filter="url(#tfGlow)">
+    <!-- Main TF symbol -->
+    <g fill="url(#tfGradient)">
+      <!-- T shape -->
+      <rect x="-20" y="-25" width="40" height="6"/>
+      <rect x="-3" y="-25" width="6" height="35"/>
+      
+      <!-- F shape -->
+      <rect x="-20" y="5" width="6" height="30"/>
+      <rect x="-20" y="5" width="25" height="6"/>
+      <rect x="-20" y="18" width="20" height="6"/>
+    </g>
+    
+    <!-- Neural network visualization -->
+    <g opacity="0.4" stroke="#ff6f00" stroke-width="1" fill="none">
+      <circle cx="-30" cy="-15" r="3"/>
+      <circle cx="-30" cy="0" r="3"/>
+      <circle cx="-30" cy="15" r="3"/>
+      <circle cx="30" cy="-10" r="3"/>
+      <circle cx="30" cy="10" r="3"/>
+      
+      <!-- Connections -->
+      <line x1="-27" y1="-15" x2="27" y2="-10"/>
+      <line x1="-27" y1="0" x2="27" y2="-10"/>
+      <line x1="-27" y1="15" x2="27" y2="10"/>
+      <line x1="-27" y1="0" x2="27" y2="10"/>
+    </g>
+    
+    <!-- Flowing data particles -->
+    <g opacity="0.7">
+      <circle cx="-15" cy="-8" r="1" fill="#ffffff">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 30,2; 0,0" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-15" cy="5" r="1" fill="#ffffff">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 30,5; 0,0" dur="4s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

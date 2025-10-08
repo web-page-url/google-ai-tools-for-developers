@@ -1,0 +1,81 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nlpGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="nlpGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" rx="10" fill="url(#nlpGradient)" opacity="0.1"/>
+  
+  <!-- Speech bubbles and text processing -->
+  <g filter="url(#nlpGlow)">
+    <!-- Input speech bubble -->
+    <g transform="translate(30, 40)">
+      <ellipse cx="0" cy="0" rx="25" ry="15" fill="url(#nlpGradient)" opacity="0.7"/>
+      <path d="M-15,10 L-20,20 L-10,15 Z" fill="url(#nlpGradient)" opacity="0.7"/>
+      <!-- Text lines -->
+      <line x1="-15" y1="-5" x2="10" y2="-5" stroke="#ffffff" stroke-width="2"/>
+      <line x1="-15" y1="0" x2="15" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <line x1="-15" y1="5" x2="5" y2="5" stroke="#ffffff" stroke-width="2"/>
+    </g>
+    
+    <!-- Processing center -->
+    <g transform="translate(100, 75)">
+      <!-- Brain/processor -->
+      <circle cx="0" cy="0" r="20" fill="none" stroke="url(#nlpGradient)" stroke-width="3"/>
+      <path d="M-10,-10 Q0,-15 10,-10 Q15,0 10,10 Q0,15 -10,10 Q-15,0 -10,-10" fill="url(#nlpGradient)" opacity="0.3"/>
+      
+      <!-- Processing nodes -->
+      <circle cx="-8" cy="-8" r="2" fill="#ff6b6b"/>
+      <circle cx="8" cy="-8" r="2" fill="#4ecdc4"/>
+      <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+      <circle cx="-8" cy="8" r="2" fill="#4ecdc4"/>
+      <circle cx="8" cy="8" r="2" fill="#ff6b6b"/>
+      
+      <!-- Connections -->
+      <g opacity="0.6" stroke="#ffffff" stroke-width="1">
+        <line x1="-8" y1="-8" x2="0" y2="0"/>
+        <line x1="8" y1="-8" x2="0" y2="0"/>
+        <line x1="0" y1="0" x2="-8" y2="8"/>
+        <line x1="0" y1="0" x2="8" y2="8"/>
+      </g>
+    </g>
+    
+    <!-- Output speech bubble -->
+    <g transform="translate(170, 110)">
+      <ellipse cx="0" cy="0" rx="25" ry="15" fill="url(#nlpGradient)" opacity="0.7"/>
+      <path d="M15,-10 L20,-20 L10,-15 Z" fill="url(#nlpGradient)" opacity="0.7"/>
+      <!-- Processed text -->
+      <line x1="-15" y1="-5" x2="15" y2="-5" stroke="#ffffff" stroke-width="2"/>
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <line x1="-5" y1="5" x2="15" y2="5" stroke="#ffffff" stroke-width="2"/>
+    </g>
+    
+    <!-- Data flow arrows -->
+    <g opacity="0.8" fill="url(#nlpGradient)">
+      <path d="M60,50 L70,45 L70,55 Z">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 10,0; 0,0" dur="2s" repeatCount="indefinite"/>
+      </path>
+      <path d="M130,85 L140,80 L140,90 Z">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 10,0; 0,0" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Floating words/tokens -->
+    <g opacity="0.5" fill="#4ecdc4" font-size="8" font-weight="bold">
+      <text x="50" y="25">HELLO</text>
+      <text x="120" y="35">WORLD</text>
+      <text x="80" y="120">AI</text>
+      <text x="150" y="50">PROCESS</text>
+    </g>
+  </g>
+</svg>

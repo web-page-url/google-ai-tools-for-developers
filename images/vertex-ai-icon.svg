@@ -1,0 +1,52 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vertexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34a853;stop-opacity:1" />
+    </linearGradient>
+    <filter id="vertexGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="60" cy="60" r="55" fill="url(#vertexGradient)" opacity="0.1"/>
+  
+  <!-- Main Vertex AI symbol - interconnected nodes -->
+  <g transform="translate(60, 60)" filter="url(#vertexGlow)">
+    <!-- Central hub -->
+    <circle cx="0" cy="0" r="8" fill="url(#vertexGradient)"/>
+    
+    <!-- Surrounding nodes -->
+    <circle cx="0" cy="-25" r="5" fill="#4285f4"/>
+    <circle cx="22" cy="-12" r="5" fill="#34a853"/>
+    <circle cx="22" cy="12" r="5" fill="#fbbc04"/>
+    <circle cx="0" cy="25" r="5" fill="#ea4335"/>
+    <circle cx="-22" cy="12" r="5" fill="#4285f4"/>
+    <circle cx="-22" cy="-12" r="5" fill="#34a853"/>
+    
+    <!-- Connecting lines -->
+    <g stroke="url(#vertexGradient)" stroke-width="2" opacity="0.7">
+      <line x1="0" y1="0" x2="0" y2="-25"/>
+      <line x1="0" y1="0" x2="22" y2="-12"/>
+      <line x1="0" y1="0" x2="22" y2="12"/>
+      <line x1="0" y1="0" x2="0" y2="25"/>
+      <line x1="0" y1="0" x2="-22" y2="12"/>
+      <line x1="0" y1="0" x2="-22" y2="-12"/>
+    </g>
+    
+    <!-- Data flow animation -->
+    <g opacity="0.6">
+      <circle cx="0" cy="-12" r="1" fill="#ffffff">
+        <animateTransform attributeName="transform" type="translate" values="0,12; 0,-25; 0,12" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="11" cy="6" r="1" fill="#ffffff">
+        <animateTransform attributeName="transform" type="translate" values="-11,-6; 22,12; -11,-6" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

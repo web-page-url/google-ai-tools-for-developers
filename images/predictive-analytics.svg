@@ -1,0 +1,65 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <filter id="paGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" rx="10" fill="url(#paGradient)" opacity="0.1"/>
+  
+  <!-- Chart area -->
+  <g transform="translate(20, 20)" filter="url(#paGlow)">
+    <!-- Axes -->
+    <line x1="0" y1="110" x2="160" y2="110" stroke="url(#paGradient)" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="110" stroke="url(#paGradient)" stroke-width="2"/>
+    
+    <!-- Data line (historical) -->
+    <path d="M0,90 Q20,80 40,70 T80,60 T120,50" stroke="#4facfe" stroke-width="3" fill="none" opacity="0.8"/>
+    
+    <!-- Predicted line (dashed) -->
+    <path d="M120,50 Q140,45 160,40" stroke="#00f2fe" stroke-width="3" fill="none" stroke-dasharray="5,5" opacity="0.9">
+      <animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Data points -->
+    <circle cx="0" cy="90" r="3" fill="#4facfe"/>
+    <circle cx="40" cy="70" r="3" fill="#4facfe"/>
+    <circle cx="80" cy="60" r="3" fill="#4facfe"/>
+    <circle cx="120" cy="50" r="3" fill="#4facfe"/>
+    
+    <!-- Prediction points -->
+    <circle cx="140" cy="45" r="3" fill="#00f2fe" opacity="0.8">
+      <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="40" r="3" fill="#00f2fe" opacity="0.8">
+      <animate attributeName="r" values="3;5;3" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Trend arrow -->
+    <path d="M140,30 L150,25 L150,35 Z" fill="#00f2fe" opacity="0.7">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Grid lines -->
+    <g opacity="0.3" stroke="url(#paGradient)" stroke-width="1">
+      <line x1="0" y1="80" x2="160" y2="80"/>
+      <line x1="0" y1="60" x2="160" y2="60"/>
+      <line x1="0" y1="40" x2="160" y2="40"/>
+      <line x1="40" y1="0" x2="40" y2="110"/>
+      <line x1="80" y1="0" x2="80" y2="110"/>
+      <line x1="120" y1="0" x2="120" y2="110"/>
+    </g>
+  </g>
+  
+  <!-- Labels -->
+  <text x="100" y="140" text-anchor="middle" fill="url(#paGradient)" font-size="12" font-weight="bold">Predictive Analytics</text>
+</svg>
