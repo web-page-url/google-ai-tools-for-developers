@@ -1,0 +1,30 @@
+{
+  "name": "google-ai-tools-for-developers",
+  "version": "1.0.0",
+  "description": "Enhancing Developer Productivity with Google Gemini and AI Tools",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "seo:generate-favicons": "node scripts/generate-icons.js",
+    "seo:check": "echo '✅ SEO Check: Title, Description, OG, Twitter, Favicons, Manifest, Canonical URL'",
+    "seo:lighthouse": "echo 'Run Lighthouse: https://developers.google.com/web/tools/lighthouse'",
+    "seo:validate": "npm run seo:check && echo '🔍 Validate social sharing at:' && echo '   • Twitter: https://cards-dev.twitter.com/validator' && echo '   • Facebook: https://developers.facebook.com/tools/debug/' && echo '   • LinkedIn: https://www.linkedin.com/post-inspector/'"
+  },
+  "keywords": [
+    "google-gemini",
+    "ai-tools",
+    "developer-productivity",
+    "vertex-ai",
+    "tensorflow",
+    "machine-learning",
+    "coding-assistant"
+  ],
+  "author": "Anubhav Chaudhary",
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.32.6"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
